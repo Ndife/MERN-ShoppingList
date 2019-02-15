@@ -11,8 +11,8 @@ const app = express();
 app.use(bodyParser.json());
 
 // DB Config
-// const db = require('./config/keys').mongoURI; 
-const db = "mongodb://localhost:27017/items"; 
+const db = require('./config/keys').mongoURI; 
+// const db = "mongodb://localhost:27017/items"; 
 
 // Connect to Mongo
 mongoose
